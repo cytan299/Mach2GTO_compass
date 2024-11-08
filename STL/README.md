@@ -13,7 +13,7 @@ CURA](https://ultimaker.com/software/ultimaker-cura/) for 3D printing.
 The following STL files are common for every type of possible trays:
 
 * **clamp_screw.stl** the clamp screw.
-* **mount assembly.stl** the mount assembly.
+* **mount_attachment.stl** the mount attachment.
 
 ## Hiking compass tray
 
