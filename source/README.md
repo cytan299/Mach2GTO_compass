@@ -20,6 +20,22 @@ The photo here:
 
 shows the dimensions that has to be filled.
 
+The user can choose what _STL_ files to generate by setting the
+variable to "1":
+
+```cpp
+
+// Choose what you want to print by setting it to 1
+
+MAKE_ATTACHMENT = 0;
+MAKE_COMPASS_TRAY = 0;
+MAKE_IPHONE_TRAY = 0;
+MAKE_CLAMP_SCREW = 1;
+
+```
+
+
+
 ## Support
 
 All the software have been successfully compiled with OpenSCAD version

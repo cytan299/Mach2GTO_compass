@@ -23,8 +23,8 @@ parts:
     available from [Amazon](https://www.amazon.com/Sun-Company-ProMap-Compass-Orienteering/dp/B0BSB7CK6H/ref=sr_1_1?crid=ZWZMW4UPDAT9&dib=eyJ2IjoiMSJ9.PTZqovFsVuQk3P45Le2lTuAsgPY44nySoG10m8s-QUuoT1wN7dO-BFimQgfy31KC_YmA8sLe666aclBQXb9lEbcNqpF3awJ3ZINpGZ0XESWjY2NOR7VNBA1JpDoWsMifdDZDIUJLesX8HBHJGt1RxLk3mVy5rUpbl2KBz1uPtOPo6wgXmPjslWVs-K_GiZJGgon0kJY_P5RN482iRCkKOnEb71ZqvgoTGo_J1YwDRO4qFGxL4XH927XOVDhtrkYt692_lA3Ms2lrfuJUiz-jFO6ViczCguzPnb_2_r6vVZA.qHjP3ISotJTO9xLwJP26toHr-h7VLB3HC0Cjn3-bgD4&dib_tag=se&keywords=Sun+Company+ProMap+Compass&qid=1731036913&sprefix=sun+company+promap+compass%2Caps%2C430&sr=8-1)
 	
 ## Directory structure
-* ** source ** OpenSCAD source code.
-* **pics ** contains photos used for describing this repository.
+* **source** OpenSCAD source code.
+* **pics** contains photos used for describing this repository.
 
 ## Support
 
