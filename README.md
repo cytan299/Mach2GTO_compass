@@ -11,7 +11,7 @@ parts:
 ![Attachment_Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/attachment_tray.jpeg)
 
 
-* **A mounting attachment** that slides onto the Mach2GTO and
+* **A mount attachment** that slides onto the Mach2GTO and
   clamped to it with 3D printed screw.
   
 * **Tray** that is is either for a hiking compass or a cell
@@ -24,12 +24,23 @@ parts:
 	
 ## Directory structure
 * **source** OpenSCAD source code.
+* **assembly** Assembly instructions.
 * **pics** contains photos used for describing this repository.
 
 ## Support
 
 All the software have been successfully compiled with OpenSCAD version
 2024.10.28.
+
+This is unsupported software and hardware. Build at your own peril! :)
+
+You can submit questions or bug reports using the
+[issues](https://github.com/cytan299/Mach2GTO_compass/issues) tab 
+and then clicking on **New Issue**.
+
+Have fun!
+
+## License
 
 All software is released under GPLv3.
 

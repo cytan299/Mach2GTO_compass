@@ -1,5 +1,7 @@
 # OpenSCAD source code
 
+by C.Y. Tan 2024
+
 This directory contains the OpenSCAD source code:
 _mach2gto_compass.scad_. This code has been successfully compiled with
 [OpenSCAD](https://openscad.org/downloads.html) version 2024.11.04.
@@ -18,7 +20,9 @@ iphone_vol_l = 26; //mm length of the iPhone volume buttons. See photo
   ```
 The photo here: 
 
-shows the dimensions that has to be filled.
+![phone_dimensions](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/phone_dimensions.jpeg)
+
+shows what the dimensions that is required for the OpenSCAD program.
 
 The user can choose what _STL_ files to generate by setting the
 variable to "1":
@@ -34,12 +38,18 @@ MAKE_CLAMP_SCREW = 1;
 
 ```
 
-
-
 ## Support
 
 All the software have been successfully compiled with OpenSCAD version
 2024.10.28.
+
+This is unsupported software and hardware. Build at your own peril! :)
+
+You can submit questions or bug reports using the
+[issues](https://github.com/cytan299/Mach2GTO_compass/issues) tab 
+and then clicking on **New Issue**.
+
+## License
 
 All software is released under GPLv3.
 
