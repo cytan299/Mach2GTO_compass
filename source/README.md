@@ -1,0 +1,46 @@
+# OpenSCAD source code
+
+This directory contains the OpenSCAD source code:
+_mach2gto_compass.scad_. This code has been successfully compiled with
+[OpenSCAD](https://openscad.org/downloads.html) version 2024.11.04.
+
+Since all cell phones have different dimensions, the user can update
+the code at the top of _mach2gto_compass.scad_ for their cell phone+case.
+
+  ```cpp
+  iphone_l = 140.5; // mm, length of the iPhone includes case. See photo.
+iphone_w = 71; // mm, width of the iPhone includes case. See photo.
+iphone_H = 10; // mm  height of the iPhone
+iphone_button_l = 13; //mm, length of the iPhone button indent. See photo.
+iphone_onoff_x = 29; // mm, from reference position. See photo.
+iphone_vol_x = 29; // mm, from reference position. See photo.
+iphone_vol_l = 26; //mm length of the iPhone volume buttons. See photo
+  ```
+The photo here: 
+
+shows the dimensions that has to be filled.
+
+## Support
+
+All the software have been successfully compiled with OpenSCAD version
+2024.10.28.
+
+All software is released under GPLv3.
+
+All documentation is released under Creative Commons
+Attribution-ShareAlike 3.0 Unported License or GNU Free
+Documentation License, Version 1.3
+
+
+    
+  
+  
+  
+  
+
+
+
+
+
+
+

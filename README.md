@@ -11,10 +11,10 @@ parts:
 ![Attachment_Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/attachment_tray.jpeg)
 
 
-* ** A mounting attachment ** that slides onto the Mach2GTO and
+* **A mounting attachment** that slides onto the Mach2GTO and
   clamped to it with 3D printed screw.
   
-* ** Tray ** that is is either for a hiking compass or a cell
+* **Tray** that is is either for a hiking compass or a cell
   phone. Since cell phones come in many sizes, the user will have to
   modify the OpenSCAD code in _source/mach2gto_compass.scad_ for their
   phone. See README in the _source_ directory for guidance as to what

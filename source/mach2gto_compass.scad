@@ -30,8 +30,8 @@ $fn=100;
 
 MAKE_ATTACHMENT = 0;  
 MAKE_COMPASS_TRAY = 0;
-MAKE_IPHONE_TRAY = 1;
-MAKE_CLAMP_SCREW = 0;
+MAKE_IPHONE_TRAY = 0;
+MAKE_CLAMP_SCREW = 1;
 
 
 // parameters
@@ -254,8 +254,9 @@ module make_clamp_hole(pos)
 
 module make_clamp_screw()
 {
-  // screw
-    RodStart(2*clamp_screw_thread_r, clamp_screw_handle_h, clamp_screw_thread_len);
+  dtol = 0.25; //mm
+  // screw. Make it a little smaller
+  RodStart(2*(clamp_screw_thread_r-dtol), clamp_screw_handle_h, clamp_screw_thread_len);
   
 }
 
