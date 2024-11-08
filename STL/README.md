@@ -6,7 +6,8 @@ These STL files were created with
 [OpenSCAD](https://openscad.org/downloads.html) version 2024.11.04
 from the source code in the _source_ directory. These files are loaded
 into a slicer program like the [Ultimaker
-CURA](https://ultimaker.com/software/ultimaker-cura/) for 3D printing.
+CURA](https://ultimaker.com/software/ultimaker-cura/) generating the
+g-code for 3D printing.
 
 ## Common STL files
 
