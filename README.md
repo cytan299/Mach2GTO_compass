@@ -24,6 +24,7 @@ parts:
 	
 ## Directory structure
 * **source** OpenSCAD source code.
+* **STL** STL files generated from the OpenSCAD source code. 
 * **assembly** Assembly instructions.
 * **pics** contains photos used for describing this repository.
 
