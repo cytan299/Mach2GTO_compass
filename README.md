@@ -12,7 +12,7 @@ parts:
 
 
 * **A mount attachment** that slides onto the Mach2GTO and
-  clamped to it with 3D printed screw.
+  clamped with a 3D printed screw.
   
 * **Tray** that is is either for a hiking compass or a cell
   phone. Since cell phones come in many sizes, the user will have to
