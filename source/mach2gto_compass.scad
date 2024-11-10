@@ -29,9 +29,9 @@ $fn=100;
 // Choose what you want to print by setting it to 1
 
 MAKE_ATTACHMENT = 0;  
-MAKE_COMPASS_TRAY = 0;
+MAKE_COMPASS_TRAY = 1;
 MAKE_IPHONE_TRAY = 0;
-MAKE_CLAMP_SCREW = 1;
+MAKE_CLAMP_SCREW = 0;
 
 
 // parameters
@@ -54,7 +54,7 @@ iphone_vol_l = 26; //mm length of the iPhone volume buttons. See photo
   For heavier phones, the gusset length can be increased
 */
 
-gusset_l = 10; //mm
+gusset_l = 0; //mm
 
 
 // Do not change the following parameters
@@ -82,6 +82,8 @@ clamp_screw_thread_r = 5;
 clamp_screw_handle_h = 20;
 clamp_screw_thread_len = base_t*2*0.75;
 
+// compass tray length
+compass_tray_l = base_rect_x + 8.5; //mm, length of the compass tray
 
 module make_base()
 {
@@ -284,14 +286,16 @@ module make_compass_tray()
   
   translate([base_rect_x/2,-bracket_t,0]){
     rotate([0,-90,0]){
-      linear_extrude(height=base_rect_x, v=[0,0,1], center=false){
+      linear_extrude(height=compass_tray_l, v=[0,0,1], center=false){
 	polygon(points=[[0,0], [-bracket_space, 0],
-			[-bracket_space, bracket_t], [7,bracket_t],
-			[7, -3.5],[5,-3.5],
-			[5, -2+dtol], [bracket_t,-2+dtol],
-			[bracket_t,-61-dtol], [5,-61-dtol],
-			[5, -59.5],[7,-59.5],
-			[7,-66],[0,-66],
+			[-bracket_space, bracket_t],
+			[8.75,bracket_t],[8.75, -3.5],
+			[6.75,-3.5],[6.75, -2+dtol],
+			[bracket_t,-2+dtol],
+			[bracket_t,-63-dtol],
+			[6.75,-63-dtol],
+			[6.75, -61], [8.75,-61],
+			[8.75,-68],[0,-68],
 			[0,0]
 			]);
       }
@@ -317,6 +321,75 @@ module make_compass_tray_wedge()
 }
 
 module make_compass_tray_gussets()
+{
+  dx = compass_tray_l - base_rect_x; // extra length of the tray
+  union(){
+    translate([bracket_t-base_rect_x/2-dx,-bracket_t,0]){
+      rotate([0,-90,0]){
+	linear_extrude(height=bracket_t, v=[0,0,1], center=false){
+	  polygon(points=[[0,0],
+			  [0, -(bracket_space + gusset_l)],
+			  [-bracket_space, -gusset_l],
+			  [-bracket_space, 0],
+			  [0,0]
+			  ]);
+	}
+      }
+    }
+
+    translate([bracket_t + base_rect_x/2 - bracket_t,-bracket_t,0]){
+      rotate([0,-90,0]){
+	linear_extrude(height=bracket_t, v=[0,0,1], center=false){
+
+	  polygon(points=[[0,0],
+			  [0, -(bracket_space + gusset_l)],
+			  [-bracket_space, -gusset_l],
+			  [-bracket_space, 0],
+			  [0,0]
+			  ]);	  
+	}
+      }
+    }
+  }    
+}
+
+module make_compass_tray_catch()
+{
+  catch_x_w = bracket_t; // x width
+  catch_y_w = 3.6; // y width
+  catch_z_w = 11.1; // z height
+
+  catch_ypos = 35.5; // measured
+
+  echo("******yyy = ", catch_y_w/2 - catch_ypos);
+
+  union(){
+
+            translate([-catch_x_w +base_rect_x/2,catch_y_w/2 - catch_ypos, bracket_t]){    
+      rotate([90,0,0]){
+	linear_extrude(height=catch_y_w, v=[0,0,1], center=false){
+	  polygon(points=[[0,0], 
+			  [-2,7.1], [-5.4,7.1],
+			  [-5.4,5.1],[-7.1,5.1],
+			  [-8.8,7.1],[-8.8,catch_z_w],
+			  [3,catch_z_w],[3,0],
+			  [0,0]
+			  ]
+		  );
+	} // extrude
+      } // rotate
+    } // translate
+
+    guss_l = 13.6; // length of the gusset
+    translate([-catch_x_w+base_rect_x/2, -catch_ypos-guss_l/2,0]){
+      cube([catch_x_w,guss_l,catch_z_w + bracket_t], center=false);
+    }
+    
+  } // union
+
+}
+
+module make_iphone_tray_gussets()
 {
   union(){
     translate([bracket_t-base_rect_x/2,-bracket_t,0]){
@@ -348,9 +421,6 @@ module make_compass_tray_gussets()
   }    
 }
 
-/*
-  Define your iphone or android dimensions here
-*/
 
 
 
@@ -466,9 +536,18 @@ union(){
 	make_compass_tray();
 	make_compass_tray_wedge();
 	make_compass_tray_gussets();
+
+	make_compass_tray_catch();
       }
 
-      make_bracket_screw_holes();    
+      make_bracket_screw_holes();
+      /*
+      translate([-100-70,-100,-25]){
+	cube([200, 150, 50], center = false);
+      
+	}
+      */
+      
     }
   }
   
@@ -482,10 +561,11 @@ union(){
       union(){
 	make_iphone_tray();
 	make_compass_tray_wedge();
-	make_compass_tray_gussets();
+	make_iphone_tray_gussets();
       }
 
-      make_bracket_screw_holes();    
+      make_bracket_screw_holes();
+
     }
   }
 
