@@ -16,12 +16,12 @@ The following STL files are common for every type of possible trays:
 * **clamp_screw.stl** the clamp screw.
 * **mount_attachment.stl** the mount attachment.
 
-## Hiking compass tray
+## Map compass tray
 
-This tray fits the hiking compass made by _Sun Company ProMap Compass_
+This tray fits the map compass made by _Sun Company ProMap Compass_
     available from [Amazon](https://www.amazon.com/Sun-Company-ProMap-Compass-Orienteering/dp/B0BSB7CK6H/ref=sr_1_1?crid=ZWZMW4UPDAT9&dib=eyJ2IjoiMSJ9.PTZqovFsVuQk3P45Le2lTuAsgPY44nySoG10m8s-QUuoT1wN7dO-BFimQgfy31KC_YmA8sLe666aclBQXb9lEbcNqpF3awJ3ZINpGZ0XESWjY2NOR7VNBA1JpDoWsMifdDZDIUJLesX8HBHJGt1RxLk3mVy5rUpbl2KBz1uPtOPo6wgXmPjslWVs-K_GiZJGgon0kJY_P5RN482iRCkKOnEb71ZqvgoTGo_J1YwDRO4qFGxL4XH927XOVDhtrkYt692_lA3Ms2lrfuJUiz-jFO6ViczCguzPnb_2_r6vVZA.qHjP3ISotJTO9xLwJP26toHr-h7VLB3HC0Cjn3-bgD4&dib_tag=se&keywords=Sun+Company+ProMap+Compass&qid=1731036913&sprefix=sun+company+promap+compass%2Caps%2C430&sr=8-1)
 	
-* **hiking_compass_tray.stl** the tray that fits the Sun Company
+* **map_compass_tray.stl** the tray that fits the Sun Company
   ProMap compass.
 
 ## Specialized STL files

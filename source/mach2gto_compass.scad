@@ -1,7 +1,7 @@
 /*
   
     mach2gto_compass.scad is the code to generate a tray for an iPhone
-    or hiking compass
+    or map compass
     
     Copyright (C) 2024  C.Y. Tan
     Contact: cytan299@yahoo.com
@@ -29,8 +29,8 @@ $fn=100;
 // Choose what you want to print by setting it to 1
 
 MAKE_ATTACHMENT = 0;  
-MAKE_COMPASS_TRAY = 1;
-MAKE_IPHONE_TRAY = 0;
+MAKE_COMPASS_TRAY = 0;
+MAKE_IPHONE_TRAY = 1;
 MAKE_CLAMP_SCREW = 0;
 
 
