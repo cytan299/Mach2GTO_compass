@@ -26,10 +26,12 @@ This tray fits the map compass made by _Sun Company ProMap Compass_
 
 ## Specialized STL files
 
-I made a iphone tray for my iPhone SE. Here's the STL file. Note:
-  Every iPhone generation may have slightly different dimensions and
-  so the OpenSCAD source code have to be modified for your iPhone.
-
+I made a phone tray for my iPhone SE. Here's the STL file. Note:
+  Every iPhone generation has different dimensions and
+  so the OpenSCAD source code will have to be modified for your
+  iPhone. See _source/README.md_ for instructions. Of course, the same
+  instructions apply for Android phones as well.
+  
 * **iphone_tray.stl** the tray that fits the iPhone SE with case. 
 
 
