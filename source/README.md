@@ -12,7 +12,8 @@ _mach2gto_compass.scad_. This code has been successfully compiled with
 
 Since all cell phones have different dimensions, the user can update
 the code at the top of _mach2gto_compass.scad_ for their cell phone
-with case.
+with case. Note: although the variable names are iPhone centric, these
+variables apply for Android phones as well.
 
   ```cpp
   iphone_l = 140.5; // mm, length of the iPhone includes case. See photo.
@@ -30,7 +31,8 @@ The photo here
 shows the dimensions that are required for the OpenSCAD program. 
 
 The user can choose what _STL_ files to generate by setting the
-variable to "1":
+following variables to "1". In this example, the user has chosen to
+print the clamp screw.
 
 ```cpp
 

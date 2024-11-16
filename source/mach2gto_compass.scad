@@ -29,8 +29,8 @@ $fn=100;
 // Choose what you want to print by setting it to 1
 
 MAKE_ATTACHMENT = 0;  
-MAKE_COMPASS_TRAY = 0;
-MAKE_IPHONE_TRAY = 1;
+MAKE_COMPASS_TRAY = 1;
+MAKE_IPHONE_TRAY = 0;
 MAKE_CLAMP_SCREW = 0;
 
 
@@ -303,7 +303,7 @@ module make_compass_tray()
   }
 }
 
-module make_compass_tray_wedge()
+module make_compass_tray_dovetail()
 {
   dtol = 0.025;
   
@@ -534,7 +534,7 @@ union(){
 
       union(){
 	make_compass_tray();
-	make_compass_tray_wedge();
+	make_compass_tray_dovetail();
 	make_compass_tray_gussets();
 
 	make_compass_tray_catch();
@@ -560,7 +560,7 @@ union(){
 
       union(){
 	make_iphone_tray();
-	make_compass_tray_wedge();
+	make_compass_tray_dovetail();
 	make_iphone_tray_gussets();
       }
 
