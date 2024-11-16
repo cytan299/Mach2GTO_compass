@@ -10,10 +10,11 @@ _mach2gto_compass.scad_. This code has been successfully compiled with
   compilation of the source code. _threads.scad_ can be downloaded
   from [here](https://github.com/rcolyer/threads-scad).
 
-Since all cell phones have different dimensions, the user can update
-the code at the top of _mach2gto_compass.scad_ for their cell phone
-with case. Note: although the variable names are iPhone centric, these
-variables apply for Android phones as well.
+
+Since all cell phones have varying dimensions, the user can modify the
+code at the top of _mach2gto_compass.scad_ to suit their specific cell
+phone with a case. Please note that while the variable names are
+iPhone-centric, they are also applicable to Android phones.
 
   ```cpp
   iphone_l = 140.5; // mm, length of the iPhone includes case. See photo.
