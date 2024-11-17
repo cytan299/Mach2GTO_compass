@@ -2,7 +2,7 @@
 
 by C.Y. Tan 2024
 
-![Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/compass_tray.jpg)
+![Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/mounted_on.jpeg)
 
 I have created a 3D printed tray for either a cell phone or a map
 compass that can be mounted on a Mach2GTO.  The tray consists of two
