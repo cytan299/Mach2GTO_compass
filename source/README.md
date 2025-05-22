@@ -1,9 +1,10 @@
 # OpenSCAD source code
 
-by C.Y. Tan 2024
+by C.Y. Tan 2024/2025
 
-This directory contains the OpenSCAD source code:
-_mach2gto_compass.scad_. This code has been successfully compiled with
+This directory contains the OpenSCAD source codes:
+_mach2gto_compass.scad_ and _mach1gto_compass.scad. This code has been
+successfully compiled with
 [OpenSCAD](https://openscad.org/downloads.html) version 2024.11.04.
 
 * **threads.scad** This library is required for the successful
@@ -45,6 +46,8 @@ MAKE_IPHONE_TRAY = 0;
 MAKE_CLAMP_SCREW = 1;
 
 ```
+
+Note: A clamp screw is not needed for the Mach1GTO attachment.
 
 ## Support
 

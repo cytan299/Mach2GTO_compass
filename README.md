@@ -1,18 +1,34 @@
-# Astro-Physics Mach2GTO compass tray
+# Astro-Physics Mach2GTO or Mach1GTO  compass tray
 
-by C.Y. Tan 2024
-
-![Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/mounted_on.jpeg)
+by C.Y. Tan 2024/2025
 
 I have created a 3D printed tray for either a cell phone or a map
-compass that can be mounted on a Mach2GTO.  The tray consists of two
-parts:
+compass that can be mounted on a Mach2GTO or Mach1GTO.
 
-![Attachment_Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/attachment_tray.jpeg)
+## Mach2GTO photos
 
+Here's the photos of the Mach2GTO with the compass tray and attachment.
 
-* **A mount attachment** that slides onto the Mach2GTO and
-  clamped with a 3D printed screw.
+![Mach2GTO Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/mounted_on.jpeg)
+
+![Mach2GTO Attachment_Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/attachment_tray.jpeg)
+
+## Mach1GTO photos
+
+Here's the photos of the Mach1GTO with the compass tray and attachment.
+The Mach1GTO attachment is different from the Mach2GTO
+attachment in that it does not have a clamping screw. This attachment
+fits into the recess on the East side of the Mach1GTO.
+
+![Mach1GTO Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/m1_mounted_on.jpeg)
+
+![Mach1GTO Attachement
+Tray](https://github.com/cytan299/Mach2GTO_compass/blob/main//pics/m1_attachment_tray.jpeg)
+
+## Summary
+
+* **Mount attachment** that slides onto the Mach2GTO and
+  clamped with a 3D printed screw or into the recess of the  Mach1GTO. 
   
 * **Tray** that is is either for a map compass or a cell
   phone. Since cell phones come in many sizes, the user will have to
@@ -25,8 +41,11 @@ parts:
 ## Directory structure
 * **source** OpenSCAD source code.
 * **STL** STL files generated from the OpenSCAD source code. 
-* **assembly** Assembly instructions.
-* **pics** contains photos used for describing this repository.
+* **assembly** Assembly instructions. Only assembly instructions for
+  the Mach2GTO are available. Assembly of the Mach1GTO compass tray is
+  similar to the Mach2GTO.
+* **pics** contains photos used for describing this repository. 
+
 
 ## Support
 
